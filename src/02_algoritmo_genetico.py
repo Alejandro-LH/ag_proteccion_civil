@@ -130,7 +130,6 @@ def ejecutar_ag(beneficios, costos, p_mut, seed):
         pop  = np.array(nueva_pop[:POP_SIZE], dtype=np.int8)
         fits = np.array([fitness_fn(ind, beneficios, costos) for ind in pop])
 
-        # Elitismo: si no mejoró, reinserta el mejor histórico
         if fits.max() >= mejor_fit:
             mejor_fit = float(fits.max())
             mejor_ind = pop[np.argmax(fits)].copy()
@@ -202,47 +201,31 @@ def graficar(resultados):
         ax.grid(True, alpha=0.3)
 
     plt.tight_layout()
-    path = OUT / "convergencia.png"
-    plt.savefig(path, dpi=150, bbox_inches="tight")
+    plt.savefig(OUT / "convergencia.png", dpi=150, bbox_inches="tight")
     plt.close()
-    print(f"\n✓ Gráfica guardada en: {path}")
+    print(f"\n✓ convergencia.png guardado")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
 # 7. EXPORTAR RESULTADOS
 # ══════════════════════════════════════════════════════════════════════════════
 
-def exportar_excel(df, resultados):
+def exportar_resultados(df, resultados):
     costos = df["costo"].values
 
-    # Tabla comparativa
-    filas = []
-    for p_mut, data in resultados.items():
-        for run_i, r in enumerate(data["runs"]):
-            filas.append({
-                "Tasa mutación":           p_mut,
-                "Corrida":                 run_i + 1,
-                "Fitness":                 round(r["fit"], 4),
-                "Municipios seleccionados": r["n_sel"],
-                "Presupuesto usado ($MXN)": r["costo"],
-                "% presupuesto":           round(r["costo"] / PRESUPUESTO * 100, 1),
-                "Factible":                "Sí" if r["costo"] <= PRESUPUESTO else "No",
-            })
-    df_tabla = pd.DataFrame(filas)
-
-    # Resumen por tasa
+    # Resumen por tasa (2 filas)
     resumen = []
     for p_mut, data in resultados.items():
         fits = [r["fit"] for r in data["runs"]]
         mr   = data["mejor_run"]
         resumen.append({
-            "Tasa mutación":    p_mut,
-            "Mejor fitness":    round(max(fits), 4),
-            "Media fitness":    round(float(np.mean(fits)), 4),
-            "SD fitness":       round(float(np.std(fits)), 4),
-            "Municipios":       data["runs"][mr]["n_sel"],
+            "Tasa mutación":     p_mut,
+            "Mejor fitness":     round(max(fits), 4),
+            "Media fitness":     round(float(np.mean(fits)), 4),
+            "SD fitness":        round(float(np.std(fits)), 4),
+            "Municipios":        data["runs"][mr]["n_sel"],
             "Presupuesto usado": data["runs"][mr]["costo"],
-            "Factible":         "Sí" if data["runs"][mr]["costo"] <= PRESUPUESTO else "No",
+            "Factible":          "Sí" if data["runs"][mr]["costo"] <= PRESUPUESTO else "No",
         })
     df_resumen = pd.DataFrame(resumen)
     print("\n── Resumen por tasa de mutación ──")
@@ -268,17 +251,11 @@ def exportar_excel(df, resultados):
     print(f"\n  Por estado:")
     print(df[sel]["estado"].value_counts().to_string())
 
-    # Guardar
-    with pd.ExcelWriter(OUT / "tabla_comparativa.xlsx", engine="openpyxl") as w:
-        df_resumen.to_excel(w, sheet_name="Resumen_por_tasa", index=False)
-        df_tabla.to_excel(w, sheet_name="Detalle_corridas", index=False)
-
-    with pd.ExcelWriter(OUT / "mejor_solucion.xlsx", engine="openpyxl") as w:
-        df_sol.to_excel(w, sheet_name="Municipios_seleccionados")
-        df[sel]["estado"].value_counts().reset_index().to_excel(w, sheet_name="Por_estado", index=False)
-
-    print(f"\n✓ tabla_comparativa.xlsx guardado")
-    print(f"✓ mejor_solucion.xlsx guardado")
+    # Guardar CSV
+    df_resumen.to_csv(OUT / "tabla_comparativa.csv", index=False, encoding="utf-8")
+    df_sol.to_csv(OUT / "mejor_solucion.csv", index=False, encoding="utf-8")
+    print(f"\n✓ tabla_comparativa.csv guardado")
+    print(f"✓ mejor_solucion.csv guardado")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -295,6 +272,6 @@ if __name__ == "__main__":
 
     resultados = correr_experimentos(df)
     graficar(resultados)
-    exportar_excel(df, resultados)
+    exportar_resultados(df, resultados)
 
     print("\n✓ Listo.")

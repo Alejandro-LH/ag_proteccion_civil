@@ -127,15 +127,9 @@ top10 = (df[["estado","municipio","zona_sismica_CFE",
          .head(10))
 print(top10.to_string(index=False))
 
-# ── 8. Exportar a Excel ────────────────────────────────────────────────────────
-with pd.ExcelWriter(OUT_XL, engine="openpyxl") as writer:
-    df.to_excel(writer, sheet_name="Dataset_completo", index=False)
-    tab_estado.to_excel(writer, sheet_name="Por_estado", index=False)
-    tab_zona.to_excel(writer, sheet_name="Zona_sismica", index=False)
-    tab_inund.to_excel(writer, sheet_name="Peligro_inundacion", index=False)
-    tab_vuln.to_excel(writer, sheet_name="Vulnerabilidad_social", index=False)
-    tab_arm_estado.to_excel(writer, sheet_name="ARM_por_estado", index=False)
-    cruce.to_excel(writer, sheet_name="Cruce_zona_inundacion")
-    top10.to_excel(writer, sheet_name="Top10_beneficio", index=False)
+# ── 8. Exportar a CSV ─────────────────────────────────────────────────────────
+OUT_DIR = ROOT / "outputs"
+OUT_DIR.mkdir(exist_ok=True)
 
-print(f"\n✓ Excel guardado en: {OUT_XL}")
+top10.to_csv(OUT_DIR / "exploracion.csv", index=False, encoding="utf-8")
+print(f"\n✓ exploracion.csv guardado en: {OUT_DIR}")

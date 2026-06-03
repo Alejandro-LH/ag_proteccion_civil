@@ -26,7 +26,8 @@ ag\_proteccion\_civil/
 │    ├── mejor\_solucion.xlsx 
 │    └── tabla\_comparativa.xlsx 
 │
-├── requirements.txt 
+├── requirements.txt
+│
 └── README.md
 ```
 

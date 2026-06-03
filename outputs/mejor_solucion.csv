@@ -1,0 +1,135 @@
+estado,municipio,zona_sismica_CFE,grado_peligro_inundacion_CENAPRED,grado_vulnerabilidad_social_CENAPRED,tiene_ARM,beneficio,costo
+Michoacán,Aquila,D,Muy alto,Muy alto,No,0.9999999999999999,100000
+Michoacán,Coahuayana,D,Muy alto,Alto,No,0.9374999999999999,100000
+Michoacán,Ixtlán,D,Muy alto,Alto,No,0.9374999999999999,100000
+Jalisco,Cabo Corrientes,D,Muy alto,Alto,No,0.9374999999999999,100000
+Michoacán,Churumuco,D,Alto,Muy alto,No,0.9249999999999999,100000
+Jalisco,La Huerta,D,Muy alto,Medio,No,0.8749999999999999,100000
+Michoacán,Gabriel Zamora,D,Alto,Alto,No,0.8624999999999999,100000
+Michoacán,La Huacana,D,Alto,Alto,No,0.8624999999999999,100000
+Jalisco,Ayutla,D,Alto,Alto,No,0.8624999999999999,100000
+Michoacán,Múgica,D,Alto,Alto,No,0.8624999999999999,100000
+Michoacán,Arteaga,D,Alto,Alto,No,0.8624999999999999,100000
+Colima,Ixtlahuacán,D,Alto,Alto,No,0.8624999999999999,100000
+Jalisco,Casimiro Castillo,D,Alto,Alto,No,0.8624999999999999,100000
+Jalisco,Tomatlán,D,Alto,Alto,No,0.8624999999999999,100000
+Michoacán,Tiquicheo de Nicolás Romero,D,Alto,Alto,No,0.8624999999999999,100000
+Jalisco,Cuautitlán de García Barragán,D,Alto,Alto,No,0.8624999999999999,100000
+Michoacán,Tuzantla,D,Alto,Alto,No,0.8624999999999999,100000
+Michoacán,Chinicuila,D,Medio,Muy alto,No,0.85,100000
+Michoacán,Tumbiscatío,D,Medio,Muy alto,No,0.85,100000
+Michoacán,Tzitzio,D,Medio,Alto,No,0.7875,100000
+Jalisco,Tuxcacuesco,D,Medio,Alto,No,0.7875,100000
+Michoacán,Tepalcatepec,D,Medio,Alto,No,0.7875,100000
+Michoacán,Turicato,D,Medio,Alto,No,0.7875,100000
+Jalisco,San Sebastián del Oeste,D,Medio,Alto,No,0.7875,100000
+Jalisco,Villa Purificación,D,Medio,Alto,No,0.7875,100000
+Michoacán,Nuevo Urecho,D,Medio,Alto,No,0.7875,100000
+Jalisco,Talpa de Allende,D,Medio,Alto,No,0.7875,100000
+Michoacán,Tancítaro,D,Medio,Alto,No,0.7875,100000
+Michoacán,Aguililla,D,Medio,Alto,No,0.7875,100000
+Michoacán,Carácuaro,D,Medio,Alto,No,0.7875,100000
+Michoacán,Coalcomán de Vázquez Pallares,D,Medio,Alto,No,0.7875,100000
+Colima,Minatitlán,D,Medio,Alto,No,0.7875,100000
+Michoacán,Nocupétaro,D,Medio,Alto,No,0.7875,100000
+Michoacán,San Lucas,D,Medio,Alto,No,0.7875,100000
+Michoacán,Puruarán,D,Medio,Alto,No,0.7875,100000
+Michoacán,Parácuaro,D,Medio,Alto,No,0.7875,100000
+Jalisco,Cihuatlán,D,Muy alto,Medio,Sí,0.7749999999999999,70000
+Nayarit,San Blas,D,Muy alto,Medio,Sí,0.7749999999999999,70000
+Michoacán,Lázaro Cárdenas,D,Muy alto,Medio,Sí,0.7749999999999999,70000
+Colima,Armería,D,Muy alto,Medio,Sí,0.7749999999999999,70000
+Michoacán,Huetamo,D,Alto,Alto,Sí,0.7625,70000
+Michoacán,Álvaro Obregón,C,Alto,Alto,No,0.7458333333333332,80000
+Jalisco,Unión de Tula,D,Medio,Medio,No,0.725,100000
+Jalisco,Tecolotlán,D,Medio,Medio,No,0.725,100000
+Jalisco,Mascota,D,Medio,Medio,No,0.725,100000
+Michoacán,Buenavista,D,Medio,Medio,No,0.725,100000
+Jalisco,El Grullo,D,Medio,Medio,No,0.725,100000
+Jalisco,El Limón,D,Medio,Medio,No,0.725,100000
+Jalisco,Mixtlán,D,Bajo,Alto,No,0.7125,100000
+Michoacán,Nuevo Parangaricutiro,D,Bajo,Alto,No,0.7125,100000
+Colima,Manzanillo,D,Muy alto,Bajo,Sí,0.7124999999999999,70000
+Colima,Tecomán,D,Alto,Medio,Sí,0.7,70000
+Nayarit,Compostela,D,Alto,Medio,Sí,0.7,70000
+Jalisco,Autlán de Navarro,D,Alto,Medio,Sí,0.7,70000
+Colima,Coquimatlán,D,Alto,Medio,Sí,0.7,70000
+Michoacán,Apatzingán,D,Alto,Medio,Sí,0.7,70000
+Michoacán,Briseñas,C,Alto,Medio,No,0.6833333333333332,80000
+Michoacán,Pajacuarán,C,Alto,Medio,No,0.6833333333333332,80000
+Nayarit,Ruíz,C,Medio,Alto,No,0.6708333333333333,80000
+Jalisco,Jilotlán de los Dolores,C,Medio,Alto,No,0.6708333333333333,80000
+Jalisco,Tolimán,C,Medio,Alto,No,0.6708333333333333,80000
+Jalisco,Tecalitlán,C,Medio,Alto,No,0.6708333333333333,80000
+Jalisco,Pihuamo,C,Medio,Alto,No,0.6708333333333333,80000
+Nayarit,Santiago Ixcuintla,C,Muy alto,Medio,Sí,0.6583333333333333,50000
+Nayarit,Tecuala,C,Alto,Alto,Sí,0.6458333333333333,50000
+Nayarit,Acaponeta,C,Alto,Alto,Sí,0.6458333333333333,50000
+Nayarit,Rosamorada,C,Alto,Alto,Sí,0.6458333333333333,50000
+Nayarit,Bahía de Banderas,D,Alto,Bajo,Sí,0.6375,70000
+Jalisco,Puerto Vallarta,D,Alto,Bajo,Sí,0.6375,70000
+Michoacán,Cojumatlán de Régules,C,Alto,Bajo,No,0.6208333333333332,80000
+Michoacán,Yurécuaro,C,Alto,Bajo,No,0.6208333333333332,80000
+Michoacán,Marcos Castellanos,C,Alto,Bajo,No,0.6208333333333332,80000
+Jalisco,Poncitlán,C,Alto,Bajo,No,0.6208333333333332,80000
+Jalisco,Tuxcueca,C,Alto,Bajo,No,0.6208333333333332,80000
+Nayarit,Huajicori,B,Medio,Muy alto,No,0.6166666666666666,80000
+Michoacán,Tanhuato,C,Medio,Medio,No,0.6083333333333333,80000
+Michoacán,Juárez,C,Medio,Medio,No,0.6083333333333333,80000
+Nayarit,Ixtlán del Río,C,Medio,Medio,No,0.6083333333333333,80000
+Nayarit,Amatlán de Cañas,C,Medio,Medio,No,0.6083333333333333,80000
+Nayarit,San Pedro Lagunillas,C,Medio,Medio,No,0.6083333333333333,80000
+Michoacán,Ecuandureo,C,Medio,Medio,No,0.6083333333333333,80000
+Michoacán,Jungapeo,C,Medio,Medio,No,0.6083333333333333,80000
+Michoacán,Numarán,C,Medio,Medio,No,0.6083333333333333,80000
+Michoacán,Chavinda,C,Medio,Medio,No,0.6083333333333333,80000
+Michoacán,Angamacutiro,C,Medio,Medio,No,0.6083333333333333,80000
+Michoacán,Copándaro,C,Medio,Medio,No,0.6083333333333333,80000
+Nayarit,Tuxpan,C,Medio,Medio,No,0.6083333333333333,80000
+Michoacán,Vista Hermosa,C,Medio,Medio,No,0.6083333333333333,80000
+Jalisco,Atengo,C,Medio,Medio,No,0.6083333333333333,80000
+Michoacán,Venustiano Carranza,C,Medio,Medio,No,0.6083333333333333,80000
+Jalisco,Tamazula de Gordiano,C,Medio,Medio,No,0.6083333333333333,80000
+Jalisco,Acatlán de Juárez,C,Medio,Medio,No,0.6083333333333333,80000
+Jalisco,Amacueca,C,Medio,Medio,No,0.6083333333333333,80000
+Jalisco,Cocula,C,Medio,Medio,No,0.6083333333333333,80000
+Jalisco,Atenguillo,C,Bajo,Alto,No,0.5958333333333333,80000
+Michoacán,Nahuatzen,C,Bajo,Alto,No,0.5958333333333333,80000
+Michoacán,Paracho,C,Bajo,Alto,No,0.5958333333333333,80000
+Michoacán,Aporo,C,Bajo,Alto,No,0.5958333333333333,80000
+Michoacán,Angangueo,C,Bajo,Alto,No,0.5958333333333333,80000
+Michoacán,Chilchota,C,Bajo,Alto,No,0.5958333333333333,80000
+Jalisco,Quitupan,C,Bajo,Alto,No,0.5958333333333333,80000
+Jalisco,Guachinango,C,Bajo,Alto,No,0.5958333333333333,80000
+Michoacán,Susupuato,C,Bajo,Alto,No,0.5958333333333333,80000
+Michoacán,Charapan,C,Bajo,Alto,No,0.5958333333333333,80000
+Michoacán,Cherán,C,Bajo,Alto,No,0.5958333333333333,80000
+Jalisco,Jamay,B,Muy alto,Bajo,No,0.5791666666666666,80000
+Michoacán,Uruapan,D,Medio,Bajo,Sí,0.5625,70000
+Colima,Colima,D,Medio,Bajo,Sí,0.5625,70000
+Michoacán,José Sixto Verduzco,C,Medio,Bajo,No,0.5458333333333333,80000
+Michoacán,Cuitzeo,C,Medio,Bajo,No,0.5458333333333333,80000
+Jalisco,Zapotiltic,C,Medio,Bajo,No,0.5458333333333333,80000
+Jalisco,Ejutla,C,Bajo,Medio,No,0.5333333333333333,80000
+Michoacán,La Piedad,C,Alto,Bajo,Sí,0.5208333333333333,50000
+Michoacán,Zamora,C,Medio,Bajo,Sí,0.4458333333333333,50000
+Nayarit,Tepic,C,Medio,Bajo,Sí,0.4458333333333333,50000
+Jalisco,Ameca,C,Medio,Bajo,Sí,0.4458333333333333,50000
+Michoacán,Sahuayo,C,Medio,Bajo,Sí,0.4458333333333333,50000
+Michoacán,Jacona,C,Medio,Bajo,Sí,0.4458333333333333,50000
+Jalisco,Zapotlán el Grande,C,Medio,Bajo,Sí,0.4458333333333333,50000
+Jalisco,Tlaquepaque,C,Medio,Bajo,Sí,0.4458333333333333,50000
+Jalisco,Tlajomulco de Zúñiga,C,Medio,Bajo,Sí,0.4458333333333333,50000
+Jalisco,Chapala,C,Medio,Bajo,Sí,0.4458333333333333,50000
+Michoacán,Tlalpujahua,C,Bajo,Medio,Sí,0.4333333333333333,50000
+Michoacán,Los Reyes,C,Bajo,Medio,Sí,0.4333333333333333,50000
+Jalisco,Ocotlán,B,Alto,Bajo,Sí,0.4041666666666666,50000
+Jalisco,La Barca,B,Alto,Bajo,Sí,0.4041666666666666,50000
+Michoacán,Maravatío,C,Bajo,Bajo,Sí,0.3708333333333333,50000
+Jalisco,Tonalá,C,Bajo,Bajo,Sí,0.3708333333333333,50000
+Michoacán,Jiquilpan,C,Bajo,Bajo,Sí,0.3708333333333333,50000
+Nayarit,Xalisco,C,Bajo,Bajo,Sí,0.3708333333333333,50000
+Michoacán,Zacapu,C,Bajo,Bajo,Sí,0.3708333333333333,50000
+Michoacán,Pátzcuaro,C,Bajo,Bajo,Sí,0.3708333333333333,50000
+Michoacán,Zitácuaro,C,Bajo,Bajo,Sí,0.3708333333333333,50000
+Michoacán,Morelia,C,Bajo,Bajo,Sí,0.3708333333333333,50000

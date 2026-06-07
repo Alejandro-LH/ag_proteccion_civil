@@ -29,7 +29,7 @@ POP_SIZE   = 200
 N_GEN      = 300
 K_TORNEO   = 5
 P_CRUCE    = 0.85
-LAMBDA     = 500.0
+ALPHA_PEN  = 0.00002   # penalización lineal: ALPHA_PEN * exceso_absoluto_MXN
 N_RUNS     = 5
 MUT_RATES  = [0.01, 0.05]
 SEED_BASE  = 42
@@ -75,8 +75,8 @@ def fitness_fn(cromosoma, beneficios, costos):
     sel    = cromosoma.astype(bool)
     b_tot  = beneficios[sel].sum()
     c_tot  = costos[sel].sum()
-    exceso = max(0.0, (c_tot - PRESUPUESTO) / PRESUPUESTO)
-    return float(b_tot - LAMBDA * exceso**2)
+    exceso = max(0.0, c_tot - PRESUPUESTO)          # exceso absoluto en MXN
+    return float(b_tot - ALPHA_PEN * exceso)
 
 
 # ══════════════════════════════════════════════════════════════════════════════

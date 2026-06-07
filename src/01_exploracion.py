@@ -2,7 +2,7 @@
 01_exploracion.py
 ─────────────────
 Exploración del dataset CENAPRED — Municipios Occidente de México
-Genera: outputs/exploracion_resumen.xlsx  (tablas de frecuencias + estadísticas)
+Genera: outputs/exploracion.csv  (top-10 municipios por beneficio)
 
 Ejecución:
     python src/01_exploracion.py
@@ -15,7 +15,6 @@ from pathlib import Path
 # ── Rutas ──────────────────────────────────────────────────────────────────────
 ROOT   = Path(__file__).resolve().parent.parent
 DATA   = ROOT / "data" / "municipios_occidente_riesgo_CENAPRED.csv"
-OUT_XL = ROOT / "outputs" / "exploracion_resumen.xlsx"
 
 # ── Carga ──────────────────────────────────────────────────────────────────────
 df = pd.read_csv(DATA, encoding="utf-8")
